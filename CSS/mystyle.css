@@ -24,6 +24,9 @@ h1, h2, h3 {
 .bold {
 	font-weight: bold;
 }
+.xsmall {
+	font-size: 12px;
+}
 .shadow {
     border: 1px solid transparent;
     -webkit-box-shadow: 1px 8px 5px 0px rgba(0, 0, 0, 0.24);
@@ -213,13 +216,20 @@ ul.products {
 .social {
     font-family: 'social-media';
     border-radius: 45px;
+    width: 30px;
+    height: 30px;
 }
 .social:hover {
-	 -webkit-transform:rotate(20deg);
-          transform:rotate(20deg);
+	 
+     -webkit-transform: rotate3d(1,0,-1,19deg); /* Safari */
+    transform: rotate3d(1,0,-1,19deg);
+    background-color: #F79F79;
  }
 .smedia {
     list-style-type: none;
+}
+td.color-1:hover,.color-2:hover,.color-3:hover,.color-4:hover,.color-5:hover {
+	transform:scale(1.3);
 }
 /*------------------------------------------------------*/
 
