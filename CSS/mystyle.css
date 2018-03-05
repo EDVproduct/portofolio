@@ -10,6 +10,8 @@ color-palete:#3F403F black olive
 
 /*fonts icons*/
 
+
+
 @import url('https://fonts.googleapis.com/css?family=Cookie|Raleway');
 body {
     margin: 0;
@@ -22,10 +24,10 @@ h1, h2, h3 {
     font-family: 'Cookie', cursive;
 }
 .bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 .xsmall {
-	font-size: 12px;
+    font-size: 12px;
 }
 .shadow {
     border: 1px solid transparent;
@@ -37,9 +39,12 @@ h1, h2, h3 {
     max-width: 60px;
     height: auto;
 }
+figcaption {
+    font-size: smaller;
+}
 /*header*/
 
-.header {
+.head {
     position: fixed;
     top: 0;
     background-color: transparent;
@@ -53,7 +58,6 @@ h1, h2, h3 {
 a:link {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    color: #F79F79;
 }
 /*main*/
 
@@ -97,10 +101,9 @@ a:link {
 .mas1, .mas2, .mas3, .mas4 {
     background-color: #9FB8AD;
     margin-bottom: 60px;
-    width:150px;
+    width: 150px;
     border: 0.5px solid #3F403F;
     border-radius: 10px;
-
 }
 .enlace {
     background-color: #9FB8AD;
@@ -118,10 +121,10 @@ a:link {
     top: 0;
     bottom: 0;
     width: 100%;
-    max-width: 100%;
-    height: 250px;
-    max-height: 60%;
+    height: auto;
+    max-height: auto;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 .hidden1, .hidden2, .hidden3, .hidden4 {
     display: none;
@@ -142,7 +145,6 @@ a:link {
     padding-left: 50px;
 }
 .moreimg {
-	height: 285px;
     margin-bottom: 25px;
     margin-top: 25px;
 }
@@ -153,10 +155,17 @@ a:link {
     color: #3F403F;
     height: 34px;
     width: 175px;
-   
+    padding: 1%;
 }
-.mas4 a:link {
-    color: #3F403F
+.mas4 a:visited {
+    color: #3F403F;
+}
+.mas5 {
+    height: 44px;
+    width: 175px;
+}
+.mas5:hover {
+    background-color: #E6E8E6;
 }
 .products li {
     height: 75px;
@@ -182,13 +191,14 @@ ul.products {
 }
 /* footer*/
 
-.footer {
+.foot {
     display: block;
     position: fixed;
     bottom: 0;
     background-color: #CED0CE;
     width: 100%;
     height: auto;
+    padding: 0;
 }
 .onder {
     background-color: white;
@@ -216,32 +226,23 @@ ul.products {
 .social {
     font-family: 'social-media';
     border-radius: 45px;
-    width: 30px;
-    height: 30px;
+    display: flex;
 }
 .social:hover {
-	 
-     -webkit-transform: rotate3d(1,0,-1,19deg); /* Safari */
-    transform: rotate3d(1,0,-1,19deg);
+    -webkit-transform: rotate3d(1, 0, -1, 19deg);
+    /* Safari */
+    transform: rotate3d(1, 0, -1, 19deg);
     background-color: #F79F79;
- }
+}
 .smedia {
     list-style-type: none;
 }
-td.color-1:hover,.color-2:hover,.color-3:hover,.color-4:hover,.color-5:hover {
-	transform:scale(1.3);
+td.color-1:hover, .color-2:hover, .color-3:hover, .color-4:hover, .color-5:hover {
+    transform: scale(1.3);
 }
 /*------------------------------------------------------*/
 
-@media screen and(max-width: 500px) {
-    .footer {
-        padding-bottom: 200px;
-    }
-    .header {
-        /*font-size: smaller;*/
-        padding: 0;
-        margin: 0;
-    }
+@media screen and (max-width: 500px) {
     .veer {
         order: 2;
         margin-top: 100px;
@@ -252,28 +253,29 @@ td.color-1:hover,.color-2:hover,.color-3:hover,.color-4:hover,.color-5:hover {
     }
     .show {
         padding-bottom: 100px;
-        margin-bottom: 250px;
+        margin-bottom: 100px;
     }
-}
-@media screen and(min-width: 501px) and (max-width:799px) {
-    .footer {
+    .foot {
+        padding-top: 0px;
+        margin:0px;
+        max-height: 150px;
         padding-bottom: 200px;
     }
+}
+@media screen and (min-width: 501px) and (max-width:799px) {
+    .foot {
+        padding-top: 0px: margin:0px;
+        padding-bottom: 200px;
+        max-height: 200px;
+    }
     .show {
-        height: 6500px;
+        height: 650px;
         padding-bottom: 100px;
         margin-bottom: 200px;
     }
 }
-@media screen and(min-width: 800px) {
-    .header {
-        padding: 0;
-        margin: 0;
-    }
+@media screen and (min-width: 800px) {
     .veer {
-        margin-top: 5%;
         margin-bottom: 0;
     }
 }
-/*--------------------------------------------------------------------*/
-
