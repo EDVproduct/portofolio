@@ -164,7 +164,7 @@ a:link {
     height: 44px;
     width: 175px;
 }
-.mas5:hover {
+.mas5 a:hover {
     background-color: #E6E8E6;
 }
 .products li {
